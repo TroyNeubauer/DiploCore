@@ -1,0 +1,13 @@
+
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    
+    compile project(':Troy Berry Core')
+    compile project(':School')
+}
+
