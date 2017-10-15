@@ -18,10 +18,10 @@ public class Account implements TroySerializable {
 		return lookup.lookup(id);
 	}
 
-	private int id;
-	private String username, email;
+	public int id;
+	public String username, email;
 
-	private Profile profile;
+	public Profile profile;
 
 	public Account() {
 	}

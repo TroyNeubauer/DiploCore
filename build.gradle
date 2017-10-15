@@ -3,11 +3,12 @@ apply plugin: 'java'
 
 repositories {
     jcenter()
+    maven{ url "https://mvnrepository.com/artifact/com.esotericsoftware/kryo"}
 }
 
 dependencies {
-    
-    compile project(':Troy Berry Core')
-    compile project(':School')
+	compile project(':Troy Berry Core')
+	compile project(':School')
+	compile group: 'com.esotericsoftware', name: 'kryo', version: '4.0.1'
 }
 

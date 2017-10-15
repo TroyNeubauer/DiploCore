@@ -47,7 +47,7 @@ public class TurnStrategy implements TroySerializable {
 	@Override
 	public void write(TroyBuffer buffer) {
 		buffer.writeInt(times.size());
-		for(int i = 0; i < buffer.size(); i++) {
+		for(int i = 0; i < buffer.limit(); i++) {
 			buffer.writeLong(times.get(i).getTime());
 		}
 		TurnTimeProvider.writeObj(provider, buffer);
